@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Humanrace Product Detail Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+  @layer base {
+    body {
+      @apply bg-white text-black antialiased font-sans;
+    }
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-black border-b border-gray-900 px-6 lg:px-12 py-4 flex items-center justify-between">
+  <div class="flex-1">
+    <img alt="Logo" class="h-10 w-auto" src="https://i.postimg.cc/jSZmKnzt/IMG-20260227-081833.png"/>
+  </div>
+  <button class="material-symbols-outlined text-2xl text-white">menu</button>
+</header>
+
+<main>
+  <!-- PRODUCT SECTION: two-column on desktop -->
+  <section class="border-b border-gray-100">
+    <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:min-h-[80vh]">
+
+      <!-- LEFT: Image Gallery -->
+      <div class="relative bg-white pt-12 pb-6 px-4 lg:pt-16 lg:pb-16 lg:px-12 lg:border-r lg:border-gray-100 flex flex-col">
+        <!-- Nav arrows -->
+        <div class="flex items-center justify-between absolute top-1/2 left-0 right-0 -translate-y-1/2 px-4 z-10 pointer-events-none lg:px-6">
+          <button class="pointer-events-auto material-symbols-outlined text-3xl font-light opacity-40">chevron_left</button>
+          <button class="pointer-events-auto material-symbols-outlined text-3xl font-light opacity-40">chevron_right</button>
+        </div>
+        <div class="flex justify-center items-center flex-1">
+          <img
+            alt="Adidas x Humanrace sneaker"
+            class="w-full max-w-sm lg:max-w-lg h-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxiKkyxxfyr-LhEpflgxEfpvYp8MiWG3QQbSAyZFg3HD3Dct6ae7Q_ai5USWy_loDibi8VEk-Uv94wq9_Z2N0CI3x30AXn_q5dARtrfTTIDXNXUoJWIhIgIPyraZ132JiodWEkuDQQJ39JzGMCSvvCSXe_4E5IG7eHjD9U7kR3XLtoi1zwvLb8_RqPnfqGw7ZxhEh3xPxUPBP8kBSOsMQ2DNvCTCmzwhrtNiSLpFuoHjX97_s-D19zftZhCclzzQm-LddB-mrZemA"
+          />
+        </div>
+        <!-- Dots -->
+        <div class="flex justify-center gap-2 mt-8">
+          <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Product Info -->
+      <div class="px-5 py-8 lg:px-12 lg:py-16 lg:overflow-y-auto flex flex-col">
+        <h1 class="text-[28px] lg:text-[36px] font-bold leading-tight mb-8">PW Adizero Pro Evo 1 EVOLUTION</h1>
+
+        <!-- Size selector only (no Add to Cart) -->
+        <div class="mb-8">
+          <button class="w-full py-4 px-6 border border-gray-200 rounded-md text-gray-800 text-center text-lg font-medium hover:border-black transition-colors">
+            Select size
+          </button>
+        </div>
+
+        <!-- Description -->
+        <div class="prose prose-sm text-gray-700 leading-relaxed max-w-none space-y-6">
+          <p>Leveraging the technical innovation and athlete validation of the original EVO PRO 1, this new interpretation distills adidas' performance credibility into a bold, avant-garde lifestyle form. With a wider sole and haptic, touch-reactive design elements, the shoe introduces a new sensory experience—inviting wearers not just to wear the future, but to feel it. A mono mesh upper and tonal lacing system bring minimalist refinement, while Pharrell's distinct design language infuses each detail with quiet confidence and visual depth.</p>
+          <div>
+            <p class="font-bold mb-1">Product Details:</p>
+            <ul class="list-none p-0 space-y-1">
+              <li>Features Pharrell signature shape on one of adidas most innovative and lightest running models ever</li>
+              <li>Material: White Monomesh</li>
+              <li>5D Raised Dot Stripe Branding</li>
+              <li>5D Raised Dot Pattern on Toe and Heel</li>
+              <li>Lightstrike Pro Midsole</li>
+            </ul>
+          </div>
+          <p class="italic font-medium">Please note: sizes are listed in US men's sizing.</p>
+          <div class="pt-2">
+            <a class="text-black underline underline-offset-4 font-medium flex items-center" href="#">Size Chart</a>
+          </div>
+          <div class="pt-4">
+            <a class="flex items-center gap-2 text-black font-medium" href="#complete-routine">
+              <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              Complete Your Routine
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Complete Your Routine -->
+  <section class="py-12 px-5 lg:px-12 lg:py-16 max-w-7xl mx-auto w-full" id="complete-routine">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl font-bold">Complete Your Routine</h2>
+      <div class="flex gap-4">
+        <button class="material-symbols-outlined text-2xl font-light">arrow_back</button>
+        <button class="material-symbols-outlined text-2xl font-light">arrow_forward</button>
+      </div>
+    </div>
+    <div class="flex gap-6 overflow-x-auto hide-scrollbar -mx-5 px-5 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-4">
+      <div class="min-w-[200px] lg:min-w-0 flex-1">
+        <div class="bg-gray-50 aspect-square rounded-sm mb-4 flex items-center justify-center p-4">
+          <img alt="Rice Powder Cleanser Refill" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw6k08mlYsRrRcTpNgUqNBK7nGddJMFLz462TcOot6zYGl-TKkUi3e1jrUBnWpGaEzQSU0_Tk3gYp6pKwbPZ0obrwJk6RDTXhquj79abjHQcHR-Wk4hfA_UFpphazNGscqdSKY2IRoOTJ__oG8HCYPAazZT-GAoqPj2pfvwM1c7oCrYJmMh_lUQpKLDH90OdUFshkL5c37_0K6OkJG1YwyFYNc2j3IgGxp9MpcSJyqUsWIiVrP1cLmB_aB2Uu1QzQ2o7vn9_SOeVQ"/>
+        </div>
+        <h3 class="font-bold text-sm mb-2">Rice Powder Cleanser Refill</h3>
+        <div class="flex items-center gap-2 text-xs mb-4">
+          <span class="text-gray-400">$43 /</span>
+          <span class="text-emerald-600 font-bold">$38.70</span>
+        </div>
+        <button class="w-full py-2 px-4 border border-gray-200 rounded-full text-xs font-bold flex items-center justify-between hover:border-black transition-colors">
+          <span>Add to Bag</span><span class="text-lg">+</span>
+        </button>
+      </div>
+      <div class="min-w-[200px] lg:min-w-0 flex-1">
+        <div class="bg-gray-50 aspect-square rounded-sm mb-4 flex items-center justify-center p-4">
+          <img alt="Humidifying Face Cream Refill" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOaKpNvC69lvc0iNJbX1H4ktKqFtG32uEHqcLPK3Y_kF8eGZW7B0i3E1OCX4xytD5M-rrHUHQ4fiLlvIlmO6BtoFRKRIXcareDnpbbREOzkiZhb4Xm_zroQIzGwrOhHleMyMTik-V_jIwz4nwEIUrckkTMlsrd2sORMKNBh_WfYvUaP0VsjFBY-TzshGKauyOyuzsSdROA-xT-JaUBvJsfvr6Yxf_5manKLmkQxYGMJZy2dV5qVf90PH4U6fVVnWKApbG7CXCUhyY"/>
+        </div>
+        <h3 class="font-bold text-sm mb-2">Humidifying Face Cream Refill</h3>
+        <div class="flex items-center gap-2 text-xs mb-4">
+          <span class="text-gray-400">$59 /</span>
+          <span class="text-emerald-600 font-bold">$53.10</span>
+        </div>
+        <button class="w-full py-2 px-4 border border-gray-200 rounded-full text-xs font-bold flex items-center justify-between hover:border-black transition-colors">
+          <span>Add to Bag</span><span class="text-lg">+</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-12 px-5 lg:px-12 border-t border-gray-100 max-w-7xl mx-auto w-full">
+    <h2 class="text-[32px] font-bold">Reviews</h2>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-white px-5 lg:px-12 pt-16 pb-8 border-t border-gray-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16 mb-12">
+      <p class="text-lg text-gray-700 leading-snug mb-8 lg:mb-0">
+        Join our community for new product launches, skincare tips, and exclusive collaborations delivered straight to your inbox.
+      </p>
+      <div class="space-y-4">
+        <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Subscribe to our Newsletter</span>
+        <div class="flex gap-2">
+          <input class="flex-1 py-3 px-4 border border-gray-200 rounded-md focus:outline-none focus:border-black placeholder-gray-400" placeholder="Email address" type="email"/>
+          <button class="px-8 py-3 bg-white border border-gray-200 rounded-md font-medium hover:border-black transition-colors">Sign Up</button>
+        </div>
+        <p class="text-[10px] text-gray-400 leading-normal">
+          By continuing, you agree to Humanrace's <a class="underline" href="#">Terms of Service</a> and Privacy Policy.
+        </p>
+      </div>
+    </div>
+    <nav class="lg:flex lg:gap-12 space-y-6 lg:space-y-0 mb-16">
+      <a class="block text-lg font-medium lg:text-sm" href="#">About Us</a>
+      <a class="block text-lg font-medium lg:text-sm" href="#">Refills and Subscriptions</a>
+      <a class="block text-lg font-medium lg:text-sm" href="#">Consumer Perception Studies</a>
+      <a class="block text-lg font-medium lg:text-sm" href="#">Support &amp; Contact</a>
+      <a class="block text-lg font-medium lg:text-sm" href="#">Legal</a>
+    </nav>
+    <div class="pt-8 border-t border-gray-100 flex flex-col gap-2 text-xs text-gray-500 lg:flex-row lg:justify-between lg:items-center">
+      <div class="flex justify-between lg:justify-start lg:gap-8">
+        <span>Humanrace, New York, USA</span>
+        <span>© 2026</span>
+      </div>
+      <div class="flex gap-4">
+        <a class="underline" href="#">Privacy Policy</a>
+        <a class="underline" href="#">Terms &amp; Conditions</a>
+        <a class="underline" href="#">Accessibility</a>
+        <a class="underline" href="#">CCPA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
